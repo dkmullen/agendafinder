@@ -25,7 +25,7 @@ const scraper = (url, tagString) => {
   });
 }
 
-scraper(url, '#list tbody > tr > td')
+scraper(url, tagString='#list tbody > tr > td')
   .then(results => {
     let parsedResults = [];
     let i = 0;
